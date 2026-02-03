@@ -29,7 +29,17 @@
     <main>
         <!-- Profile Photo -->
         <div class="profile-container">
-            <img src="images/Image (1).jpg" alt="Ei Khaing Phyo" class="profile-photo">
+            <!-- Clickable thumbnail -->
+            <a href="#img-profile">
+                <img src="images/Image (1).jpg" alt="Ei Khaing Phyo" class="profile-photo">
+            </a>
+            <!-- The Expanded View (Hidden by default) -->
+            <div id="img-profile" class="lightbox">
+                <a href="#!" class="lightbox-close"></a>
+                <div class="lightbox-content">
+                    <img src="images/Image (1).jpg">
+                </div>
+            </div>
         </div>
 
         <!-- 1. About -->
@@ -88,7 +98,7 @@
             <h2>Skills</h2>
             <p>
                 <strong>Languages:</strong> Burmese (Native), Japanese (Studying), English<br>
-                <strong>Programming:</strong> HTML, CSS, Java (Learning)<br>
+                <strong>Programming:</strong> HTML, CSS, JavaScript, Java (Learning)<br>
                 <strong>Tools:</strong> Microsoft Office (Word, Excel, PowerPoint)<br>
                 <br>
                 システムエンジニアを目指して、現在はプログラミング言語と日本語能力の向上に力を入れています。
@@ -142,7 +152,7 @@
         </section>
 
         <!-- 5. NEW SECTION: Project -->
-        <section id="project">
+        <!-- <section id="project">
             <h2>Project</h2>
             <div class="content-box">
                 <p>
@@ -152,13 +162,44 @@
                     自分に合うかどうかいつも悩んでしまう私のような人たちのためです。
 
                 </p>
-                <!-- REPLACE 'images/project-cosmetic.jpg' WITH YOUR ACTUAL IMAGE FILE NAME -->
+                REPLACE 'images/project-cosmetic.jpg' WITH YOUR ACTUAL IMAGE FILE NAME
                 <div class="project-image-container">
                     <img src="images/スクリーンショット 2025-12-08 144848.png" alt="Cosmetic Reviews Website"
                         class="feature-image">
                 </div>
             </div>
+        </section> -->
+
+        <section id="project"> <!-- Fixed tag name from selection to section -->
+            <h2>Project</h2>
+            <div class="project-card">
+                <div class="project-media">
+                    <div class="project-content">
+                        <h3>コスメレビュー（Cosme Reviews）</h3>
+                        <p>
+                            外国に来てコスメを買いたいときに、
+                            言葉が難しくて読めない物、理解しづらい物や
+                            自分に合うかどうかいつも悩んでしまう私のような人たちのためです。
+                        </p>
+
+                        <div class="project-links">
+                            <a href="https://cosmetics-and-beauty.vercel.app/" target="_blank" class="btn">View
+                                App</a>
+                        </div>
+
+                    </div>
+
+
+                    <a href="#img-project1">
+                        <img src="./images/スクリーンショット 2025-12-08 144848.png" alt="Cosmetic Reviews Website">
+                    </a>
+
+
+
+                </div>
+            </div>
         </section>
+
 
         <!-- 6. Contact -->
         <section id="contact">
@@ -175,24 +216,51 @@
 
         <!-- NEW SECTION: Photo Gallery -->
         <div class="gallery-section">
+
             <div class="gallery-item">
-                <!-- REPLACE WITH YOUR IMAGE -->
-                <img src="images/Image (8).jpg" alt="Photo 1">
+                <a href="#img-g1">
+                    <img src="images/Image (8).jpg" alt="Photo 1">
+                </a>
+                <div id="img-g1" class="lightbox">
+                    <a href="#!" class="lightbox-close"></a>
+                    <div class="lightbox-content">
+                        <img src="images/Image (8).jpg">
+                    </div>
+                </div>
                 <p class="caption">2025年にミャンマーで大きな地震が起きた際には、日本で学生として過ごす傍ら、空いた時間で募金活動に参加したの写真でございます。</p>
             </div>
+
             <div class="gallery-item">
-                <!-- REPLACE WITH YOUR IMAGE -->
-                <img src="images/Image (7).jpg" alt="Photo 2">
+                <a href="#img-g2">
+                    <img src="images/Image (7).jpg" alt="Photo 1">
+                </a>
+                <div id="img-g2" class="lightbox">
+                    <a href="#!" class="lightbox-close"></a>
+                    <div class="lightbox-content">
+                        <img src="images/Image (7).jpg">
+                    </div>
+                </div>
                 <p class="caption">この写真は、募金活動に日本人の皆さんと一緒に参加して支援した時のものです。その活動を通して、多くの貴重な経験を得ることができました。</p>
             </div>
+
             <div class="gallery-item">
-                <!-- REPLACE WITH YOUR IMAGE -->
-                <img src="images/Image (9).jpg" alt="Photo 3">
+                <a href="#img-g3">
+                    <img src="images/Image (9).jpg" alt="Photo 1">
+                </a>
+                <div id="img-g3" class="lightbox">
+                    <a href="#!" class="lightbox-close"></a>
+                    <div class="lightbox-content">
+                        <img src="images/Image (9).jpg">
+                    </div>
+                </div>
                 <p class="caption">この写真は、学校のスポーツ大会のときのものです。私たちのクラスが優勝し、とても楽しく幸せな一日になりました。</p>
             </div>
         </div>
 
     </main>
+    <div class="scroll-top">
+        <a href="#"><img src="images/top_button.png" width="40" height="40" alt="TOPへ戻る"></a>
+    </div>
 
     <!-- FOOTER -->
     <footer>
